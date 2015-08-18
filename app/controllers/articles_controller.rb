@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
 
 	def edit
 		@article = Article.find(params[:id])
-		#@article.edit 
+		#@article.edit
 	end
 
 	def update
@@ -44,7 +44,6 @@ class ArticlesController < ApplicationController
 		@article.delete
 
 		flash.notice = "Article #{@article.title} deleted!"
-
 
 		redirect_to articles_path
 	end
